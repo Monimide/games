@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+body {
+  background: lightpink;
+}
+.fixed-box {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  background-color: white;
+  width: 100%;
+  height: 8%;
+ 
+  list-style: none;
+  justify-content: space-between;
+  display: flex;
+}
+header .logo {
+  text-align: left;
+  font-size: 2rem;
+  color: black;
+  font-weight: bolder;
+}
+nav ul li{
+  display: inline;
+}
+nav ul li a {
+  text-align: center;
+  color: black;
+  margin-right: 20px;
+}
+.fixed-box nav li a:hover{
+color: pink;
+}
+.img-gal {
+  justify-content: center;
+  grid-gap: 30px;
+  grid-template-columns: repeat(4, 1fr)
+}
+.img-gal {
+  margin: 100px auto 50px;
+  flex-wrap: wrap;
+  display: flex
+}
+.img-gal {
+  max-width: 1200px;
+  width: 100%;
+}
+.img-gal img {
+  height: 200px;
+  width: 300px;
+  cursor:pointer;
+}
+.img-gal img:hover {
+  transform: scale(0.8) rotate(-15deg);
+  border-radius: 20px;
+  box-shadow: 0 32px 75px rgba(68, 77, 132, 0.2);
+}
+.full-img {
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.9);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+.full-img img {
+  width: 90%;
+  max-width: 500px;
+}
+.full-img span {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  font-size: 30px;
+  color: #fff;
+  cursor: pointer;
+}
+
